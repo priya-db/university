@@ -191,7 +191,7 @@ header i.fa.fa-bars {
 }
 
 .welcome_note .article p {
-    padding-top: 40px;
+    padding: 40px 0;
     font-weight: 100;
     color: #444444;
     font-size: 14px;
@@ -730,6 +730,28 @@ footer a:hover {
 
     .main-visual .wrap .side:last-child {
         margin-right: 0;
+    }
+
+    /* welcome_note */
+
+    .welcome_note .article {
+        margin: 0 auto;
+        display: flex;
+        padding: 30px 2px;
+        flex-direction: row;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .welcome_note .article img {
+        max-width: 450px;
+    }
+
+
+    .welcome_note .article img:hover {
+        max-width: 500px;  
+        transition: all 1s ease-out;
+        position: absolute;
     }
 
     /* feature_course */
