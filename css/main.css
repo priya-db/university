@@ -343,10 +343,6 @@ header i.fa.fa-bars {
     background-size: cover;   
 }
 
-.admission form {
-    min-width: 350px;
-}
-
 .admission li {
     list-style: none;
     padding-bottom: 20px;   
