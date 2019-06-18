@@ -345,7 +345,6 @@ header i.fa.fa-bars {
 
 .admission form {
     min-width: 350px;
-    padding-right: 40px;
 }
 
 .admission li {
@@ -787,6 +786,11 @@ footer a:hover {
         width: 50%;
         min-width: 400px;
         background: rgba(0, 0, 0, 0.73);
+    }
+
+    .admission form {
+        min-width: 400px;
+        padding-right: 40px;
     }
 
     .admission ul {
