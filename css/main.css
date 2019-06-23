@@ -44,10 +44,6 @@ a.apply-btn:hover, a.view:hover, a.select-btn:hover {
     width: 100px;  
 }
 
-.y-hover:hover {
-    color: rgb(246,187,74) !important;
-}
-
 /* header */
 
 header {
@@ -326,11 +322,14 @@ header i.fa.fa-bars {
     margin-bottom: 20px;
 }
 
+/* .admission .container:nth-of-type(2) {
+    padding: 0;
+
+} */
+
 .admission .middle {
     color: white;
     text-align: left;
-    padding-left: 40px;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -348,6 +347,10 @@ header i.fa.fa-bars {
     padding-bottom: 20px;   
 }
 
+.admission ul {
+    padding: 0;
+}
+
 .admission input {
     padding: 10px;
     border-radius: 3px;
@@ -363,7 +366,7 @@ header i.fa.fa-bars {
 .admission .admission-btn {
     display: flex;
     justify-content: right;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .admission a.select-btn {
@@ -648,12 +651,29 @@ footer a:hover {
     .sp {
         display: none;
     }
+    
+    .container {
+        max-width: initial;
+        padding: 0 40px;
+    }
 
     /* header */
 
     header .pc ul {
         display: flex;
         list-style: none; 
+    }
+
+    header h3.title {
+        font-size: 25px;
+    }
+
+    header .logo {
+        align-items: center;
+    }
+
+    header nav a {
+        font-size: 16px;
     }
 
     header .pc a.apply-btn {
@@ -665,6 +685,7 @@ footer a:hover {
 
     header .container {
         display: flex;
+        padding: 20px 40px;
     }
 
     header .pc {
@@ -679,19 +700,18 @@ footer a:hover {
         font-size: 13px;
     }
 
-    header a:hover {
+    header nav a:hover {
         color: rgb(246,187,74);
     }
 
     /* main visual */
-
 
     .main-visual .text-bg {
         max-width: 1600px;
     }
 
     .main-visual .text-bg h2 {
-        font-size: 30px;
+        font-size: 50px;
         padding: 40px 0;
     }
 
@@ -703,7 +723,6 @@ footer a:hover {
 
     .main-visual .wrap {
         padding-bottom: 0;
-    
     }
 
     .main-visual .wrap h3 {
@@ -739,43 +758,66 @@ footer a:hover {
     }
 
     .welcome_note .article img {
-        max-width: 450px;
+        max-width: 350px;
     }
-
-
+    
     .welcome_note .article img:hover {
-        max-width: 500px;  
+        max-width: 370px;  
         transition: all 1s ease-out;
         position: absolute;
     }
 
+    .welcome_note .article p {
+        font-size: initial;
+        position: relative;
+        top: 50px;
+        line-height: 26px;
+    }
+
     /* feature_course */
+
+    .featured_courses {
+        padding-bottom: 50px;
+    }
+
+    .featured_courses h4 {
+        padding: 30px 20px;
+    }
+
+    .featured_courses h3 {
+        padding-top: 70px;
+        margin-bottom: 20px;
+    }
 
     .featured_courses .side {
         display: flex;
     }
 
     .featured_courses .graduate:nth-child(1) {
-        margin-right: 20px;
+        margin-right: 50px;
+    }
+
+    .featured_courses .text {
+        padding-bottom: 40px;
     }
 
     /* admission */
 
-
+    .admission .underline {
+        margin-bottom: 40px;
+    }
+    
     .admission .pc {
         color: white;
         padding-left: 20px;
         padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     .admission .middle {
         margin: 0;
         padding-left: 20px;
-        padding-bottom: 20px;
-    }
-
-    .admission p {
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     .admission .form-container {
@@ -789,61 +831,170 @@ footer a:hover {
         padding-right: 40px;
     }
 
+    .admission input {
+        font-size: 15px;
+    }
+
     .admission ul {
         padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .admission li {
+        padding-bottom: 30px;
     }
 
     .admission .admission-btn {
         padding-left: 0px;
         margin-left: 20px;
+        padding-bottom: 20px;
     }
 
-    /* news */
+ /* news events*/
 
-    .news, .events{
-        width: 50%;
-    }
-    .events {
-        margin-right: 40px;
-    }
-
-    .news-events {
+    .news-events.pc {
         display: flex;
+        justify-content: center;
         background-color: #ebebeb;
     }
 
-    .news .white-bg {
-        background-color: white;
-        padding: 20px;
-        margin-bottom: 20px;
+    .news-events.pc > .container {
+        flex: 1;
     }
 
-    .news .text p {
+    .news-events h3 {
+        font-weight: 100;
+        color: rgb(81,87,154);
+        padding-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .news-events .box-news {
+        display: flex;
+        padding-bottom: 20px;
+    }
+    
+    .news-events img {
+        width: 100px;
+        height: 90px;
+        padding-right:20px;
+    }
+    
+    .news-events .text h5 {
+        color: rgb(81,87,154);
+    }
+    
+    .news-events .text p {
+        color: rgb(68,68,68);
+        font-size: 15px;
+    }
+    
+    .news-events .text i {
+        color: rgb(246,187,74);
         font-size: 12px;
-
     }
 
+    .news-events .white-bg {
+        background-color: rgb(255,255,255);
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .news-events .view-btn {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .news-events .view {
+        text-decoration: none;
+        background-color: rgb(81,87,154);
+        color: white;
+        padding: 10px 40px;
+        text-align: center;
+        margin-left: 40%;
+        width: 80px;
+        margin: auto;
+    }
+    
     /* event */
-
-    .events .container {
-        padding: 0px;
+    
+    .news-events .view-btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
     }
-
-    .events .text {
+    
+    .news-events h3 {
+        font-weight: 100;
+        color: rgb(81,87,154);
+        padding-top: 80px;
+        margin-bottom: 40px;
+    }
+    
+    .news-events .yellow {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(246,187,74);
+        color: rgb(81,87,154);
+        text-align: center;
+        padding-top: 5px;
+    }
+    
+    .news-events .blue {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(81,87,154);
+        color: rgb(246,187,74);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .news-events .box-events {
+        display: flex;
+        padding-bottom: 30px;
+    }
+    
+    .news-events .text {
         padding-left: 20px;
     }
-
-    .events .white-bg {
-        background-color: white;
-        padding: 20px;
+    
+    .news-events h5 {
+        color: rgb(81,87,154);
     }
-
-    .events .white-bg {
-        margin-bottom: 20px;
-
+    
+    .news-events .text-p {
+        color: #444444;
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    
+    .news-events .blue-text {
+        color: rgb(81,87,154);
+    }
+    
+    .news-events span {
+        font-size: 13px;
+        padding-right: 5px;
+    }
+    
+    .news-events .view {
+        text-decoration: none;
+        background-color: rgb(81,87,154);
+        color: white;
+        padding: 10px 40px;
+        text-align: center;
+        margin-left: 40%;
+        width: 80px;
+        margin: auto;
     }
 
     /* research */
+
+    .research h3 {
+        margin-bottom: 40px;
+        padding-top: 70px;
+    }
 
     .research .side {
         display: flex;
@@ -874,13 +1025,17 @@ footer a:hover {
     }
 
     footer .container {
-        padding: 0;
         display: flex;
         justify-content: space-between;
+        padding-top: 10px;    
     }
 
     footer p {
         max-width: 300px;
+    }
+
+    footer ul {
+        margin: 0;
     }
 
     footer .icon {
