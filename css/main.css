@@ -653,8 +653,7 @@ footer a:hover {
     }
     
     .container {
-        max-width: initial;
-        padding: 0 40px;
+        padding: 0 100px;       
     }
 
     /* header */
@@ -665,7 +664,7 @@ footer a:hover {
     }
 
     header h3.title {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     header .logo {
@@ -673,7 +672,7 @@ footer a:hover {
     }
 
     header nav a {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     header .pc a.apply-btn {
@@ -711,7 +710,7 @@ footer a:hover {
     }
 
     .main-visual .text-bg h2 {
-        font-size: 50px;
+        font-size: 45px;
         padding: 40px 0;
     }
 
