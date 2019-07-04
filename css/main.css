@@ -862,6 +862,7 @@ footer a:hover {
 
     .news-events.pc > .container {
         flex: 1;
+        padding: 0 120px;
     }
 
     .news-events h3 {
