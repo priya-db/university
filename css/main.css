@@ -854,10 +854,6 @@ footer a:hover {
 
  /* news events*/
 
-    .news-events > .container :first-child {
-        padding-right: 0;
-    }
-
     .news-events.pc {
         display: flex;
         justify-content: center;
