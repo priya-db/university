@@ -268,7 +268,7 @@ header i.fa.fa-bars {
     color:rgb(81,87,154);
     padding-left: 20px;
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .featured_courses p {
@@ -365,26 +365,29 @@ header i.fa.fa-bars {
 
 .admission .admission-btn {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     /* margin-left: 40px; */
+    margin: 20px 0;
 }
 
-.admission a.select-btn {
+.admission .admission-btn a.select-btn {
     background: rgb(246,187,74);
     color: black;
     padding: 10px;
-    width: 130px;
+    width: 120px;
     text-decoration: none;
     text-align: center;
+    padding: 14px 40px;
+
 }
 
-.admission .apply-btn {
+.admission .admission-btn a.apply-btn {
     justify-content: center;
     text-decoration: none;
     background-color:rgb(81,87,154);
     color: white;
     padding: 10px 40px;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 
@@ -757,11 +760,11 @@ footer a:hover {
     }
 
     .welcome_note .article img {
-        max-width: 350px;
+        max-width: 300px;
     }
     
     .welcome_note .article img:hover {
-        max-width: 370px;  
+        max-width: 320px;  
         transition: all 1s ease-out;
         position: absolute;
     }
@@ -850,6 +853,10 @@ footer a:hover {
     }
 
  /* news events*/
+
+    .news-events > .container :first-child {
+        padding-right: 0;
+    }
 
     .news-events.pc {
         display: flex;
