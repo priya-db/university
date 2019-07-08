@@ -839,7 +839,6 @@ footer a:hover {
 
     .admission ul {
         padding-left: 20px;
-        padding-bottom: 20px;
     }
 
     .admission li {
@@ -862,7 +861,14 @@ footer a:hover {
 
     .news-events.pc > .container {
         flex: 1;
-        padding: 0 120px;
+        padding: 0 28px;
+    }
+
+    .news-events.pc > .container:first-child {
+        padding-left: 100px;
+    }
+    .news-events.pc > .container:last-child {
+        padding-right: 100px;
     }
 
     .news-events h3 {
