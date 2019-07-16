@@ -775,7 +775,7 @@ footer .container {
 }
 
 footer .information {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 footer .address {
@@ -787,6 +787,7 @@ footer ul {
     justify-content: center;
     margin-bottom: 10px;
 }
+
 footer li {
     list-style: none;
 }
