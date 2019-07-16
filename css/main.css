@@ -510,7 +510,6 @@ header .link.sp a:hover {
 }
 
 .news img {
-    width: 100px;
     height: 90px;
     padding-right:20px;
 }
@@ -1043,7 +1042,6 @@ footer a:hover {
     }
     
     .news-events img {
-        width: 100px;
         height: 90px;
         padding-right:20px;
     }
